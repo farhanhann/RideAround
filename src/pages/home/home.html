@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Current Location</ion-label>
+      <ion-select [(ngModel)]="current">
+        <ion-option value="nes">Bandar</ion-option>
+        <ion-option value="n64">Kiulap</ion-option>
+        <ion-option value="ps">Gadong</ion-option>
+        <ion-option value="genesis">Serusop</ion-option>
+        <ion-option value="saturn">Manggis</ion-option>
+        <ion-option value="snes">Jerudong</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+   <ion-list>
+    <ion-item>
+      <ion-label>Destination</ion-label>
+      <ion-select [(ngModel)]="location">
+        <ion-option value="nes">Bandar</ion-option>
+        <ion-option value="n64">Kiulap</ion-option>
+        <ion-option value="ps">Gadong</ion-option>
+        <ion-option value="genesis">Serusop</ion-option>
+        <ion-option value="saturn">Manggis</ion-option>
+        <ion-option value="snes">Jerudong</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block > Find Routes </button>
+
+</ion-content>
